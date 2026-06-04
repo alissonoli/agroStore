@@ -1,0 +1,100 @@
+/*CONFIGURAÇOES BASICAS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Colvetica, Colvetica, sans-serif;
+    background: linear-gradient(3deg, rgb(182, 182, 182), rgb(191, 222, 199));
+    color: #ffffff;
+    min-height: 100vh; 
+
+    animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to { 
+       opacity: 10; 
+    }
+}
+
+nav {
+    font-family: Colvetica, Colvetica, sans-serif;
+    background:rgb(5, 99, 13);
+
+    padding: 15px 40px;
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+
+}
+
+nav a {
+    width: 120px;
+    text-align: center;
+
+    color:azure;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+    padding: 10px 10px;
+
+    transition: all 0.3s ease;
+
+}
+
+nav a:hover {
+    color: rgb(0, 255, 0);
+    transform: scale(1.05);
+}
+
+.divider {
+    width:1px;
+    height: 35px;
+    background-color: white;
+}
+
+header {
+    background: linear-gradient(
+        55deg, rgb(0, 67, 6), #01ff01);
+
+    padding: 42px;
+    border-radius: 10px; 
+    margin: 50px; 
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-esquerda {
+    color: #ffffff;
+    text-align: left;
+   
+}
+
+.header-direita {
+    color:hsl(100, 98%, 16%);
+    text-align: right;
+}
+
+.header-direita h3 {
+    margin-bottom: 10px;
+}
+
+.header-direita p {
+    font-size: 17px;
+}
+

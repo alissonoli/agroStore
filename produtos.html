@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUTOS</title>
+
+<link rel="stylesheet" href="produtos.css">
+
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="siteLoja.html">Home</a>
+        <span class="divider"></span>
+
+        <a href="produtos.html">Produtos</a>
+        <span class="divider"></span>
+
+        <a href="contato.html">Contato</a>
+        <span class="divider"></span>
+
+        <a href="carrinho.html">Carrinho</a>
+
+    </nav>
+
+    <header>
+  <div class="select-wrapper">
+    <select id="filtro-pet" onchange="filtrarRacoes()">
+        <option value="todos">PRODUTOS</option>
+        <option value="ca">Cachorro Adulto</option>
+        <option value="cf">Cachorro Filhote</option>
+        <option value="g">Gatos</option>
+        <option value="gc">Gatos Castrados</option>
+    </select>
+    <span class="select-arrow">▼</span>
+</div>
+    <h2>Se houver duvidas, <br> contate-nos.</h2>
+
+    </header>
+
+    <h2 class="titulo-produtos">Nossas Rações</h2>
+
+<!--PRODUTOS-->
+    <section class="produtos">
+
+        <div class="produto" data-categoria="ca">
+            <img src="imagens/magnus-todo-dia-15.jpg" alt="Ração Magnus">
+            <h3>Magnus Adultos <br> Todo Dia 15kg</h3>
+            <div class="rodape-produto">
+                <p class="preco">R$98,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/hot-dog-adultos-15kg.jpg" alt="Ração Hot Dog">
+            <h3>Hot Dog Adultos <br>(Sem Corantes) 15kg</h3>
+            <div class="rodape-produto">
+                <p class="preco">R$135,90</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/special-dog-adultos-15.jpg" alt="Ração Special Dog">
+            <h3>Special Dog <br> Adultos 15kg</h3>
+            <div class="rodape-produto">
+                <p class="preco">R$119,90</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/sannus-every-day-15kg.jpg" alt="Ração Sannus">
+            <h3>Sannus Every Day <br> Adultos 15kg</h3>
+            <div class="rodape-produto">
+                <p class="preco">R$109,90</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+
+    </section>
+
+</body>

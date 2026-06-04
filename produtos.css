@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Colvetica, Colvetica, sans-serif;
+    background: linear-gradient(3deg, rgb(182, 182, 182), rgb(191, 222, 199));
+    color: #ffffff;
+    min-height: 100vh; 
+
+    animation: fadeIn 0.7s ease;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to { 
+       opacity: 10; 
+    }
+
+}    
+
+nav {
+    font-family: Colvetica, Colvetica, sans-serif;
+    background:rgb(5, 99, 13);
+
+    padding: 15px 40px;
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+
+}
+
+nav a {
+    width: 120px;
+    text-align: center;
+
+    color:azure;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+    padding: 10px 10px;
+
+    transition: all 0.5s ease;
+
+}
+
+nav a:hover {
+    color: rgb(0, 255, 0);
+    transform: scale(1.05);
+}
+
+.divider {
+    width:1px;
+    height: 35px;
+    background-color: white;
+}
+
+
+header {
+     background: linear-gradient(
+        55deg, rgb(0, 67, 6), #01ff01);
+
+    padding: 40px;
+    border-radius: 10px; 
+    margin: 50px; 
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*HEADER*/
+
+header h1 {
+    font-size: 23px;
+    width: 100%;
+    text-align: left;
+    margin: 10px;
+
+}
+
+header h2 {
+    font-size: 17px;
+    color: darkgreen;
+    width: 100%;
+    text-align:right;
+    margin: 10px;
+}
+
+#filtro-pet {
+    /* Remove o retângulo branco, a seta padrão e as bordas do navegador */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+
+    color: white;
+    font-size: 24px; /* Ajuste o tamanho para sumir com o original */
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+    padding: 5px 0;
+    outline: none; /* Remove aquela linha preta ao clicar */
+
+    transition: all 0.5s ease;
+}
+
+#filtro-pet:hover {
+    transform: scale(1.05);
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    outline: none;
+}
+
+#filtro-pet option {
+    background-color: #008000; /* Um fundo verde para não sumir no navegador */
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*PRODUTOS*/
+
+.titulo-produtos {
+    text-align: center;
+    margin-top:40px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: darkgreen;
+}
+.produtos {
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: 220px;
+    min-height: 22px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    display:flex;
+    flex-direction: column;
+
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.03);
+}
+
+.rodape-produto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.preco {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    color: darkgreen;
+}
+
+.produto button {
+    padding: 7px 15px;
+    border: none;
+    border-radius: 6px;
+    background: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+
+/*IMAGEM DO PRODUTO*/
+
+.produto img {
+    width: 150px;
+    height: auto;
+    border-radius: 7px;
+    align-self: center;
+}
+
+.produto h3 {
+    margin: 7px 0;
+    font-size: 18px;
+    color:#464a46;
+
+    min-height: 35px;
+    margin-top: 18px;
+}
+
